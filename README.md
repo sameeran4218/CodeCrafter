@@ -8,6 +8,8 @@ Code Crafter is an intelligent system that combines two AI agents to analyze and
 
 ![App Screenshot](https://github.com/user-attachments/assets/1137b117-1b05-4882-83b4-6c9223655c64)
 
+---
+
 ## 🌟 Features
 
 - **Dual-Agent Architecture**: Two specialized LLMs working in tandem
@@ -16,6 +18,7 @@ Code Crafter is an intelligent system that combines two AI agents to analyze and
 - **Interactive UI**: Streamlit-based interface with sample problems and history
 - **Lightweight Memory**: Maintains session context without heavy storage
 - **Multi-language Support**: Primarily Python but adaptable to other languages
+---
 
 ## 🛠️ Tech Stack
 
@@ -32,6 +35,7 @@ Code Crafter is an intelligent system that combines two AI agents to analyze and
 - Pydantic (for data validation)
 - Requests (for API calls)
 - Python-dotenv (for environment variables)
+---
 
 ## 🏗️ System Architecture
 
@@ -48,60 +52,74 @@ graph TD
     H --> C
     H --> E
 ```
-## 🚀 Getting Started
+---
+## Getting Started
+
 ### Prerequisites
 - Python 3.9+
 - OpenAI API key
 - HuggingFace API token
 - Streamlit
 
-### Installation 
-- Clone the repository -> git clone https://github.com/yourusername/code-crafter.git
-- Create and activate virtual environment: python -m venv venv
-source venv/bin/activate
-- Install dependencies: pip install -r requirements.txt
-- Set up environment variables:
-echo "OPENAI_API_KEY=your_openai_key" > .env
-echo "HUGGINGFACE_TOKEN=your_hf_token" >> .env
-- Running the Application
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/code-crafter.git
+   cd code-crafter
+   ```
+
+2. **Create and activate virtual environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Set up environment variables**
+   ```bash
+   echo "OPENAI_API_KEY=your_openai_key" > .env
+   echo "HUGGINGFACE_TOKEN=your_hf_token" >> .env
+   ```
+
+### Running the Application
+```bash
 streamlit run app.py
+```
+
+---
 
 ## 🧠 How It Works
-### Problem Analysis Phase (Agent 1)
-Receives natural language problem description
 
-Extracts structured information:
+### 1. Problem Analysis Phase (Agent 1)
+- Receives natural language problem description
+- Extracts structured information including:
+  - Problem name
+  - Input/output formats
+  - Constraints
+  - Relevant DSA topics
+  - Edge cases
+- Outputs a JSON schema for solution generation
 
-Problem name
+### 2. Solution Generation Phase (Agent 2)
+- Takes the structured problem analysis as input
+- Generates optimized solution code with:
+  - Proper comments
+  - Time and space complexity analysis
+  - Edge case handling
+- Maintains context through lightweight memory for better coherence
 
-Input/output formats
+---
 
-Constraints
+## User Interface
 
-Relevant DSA topics
+- **Input Panel:** Paste your problem statement or select from sample problems
+- **Analysis View:** Displays structured problem breakdown from Agent 1
+- **Solution View:** Shows the generated code with an option to download
+- **History:** Keeps track of previous solutions with timestamps
 
-Edge cases
-
-Outputs JSON schema for solution generation
-
-### Solution Generation Phase (Agent 2)
-Takes structured problem analysis
-
-Generates optimized solution code with:
-
-Proper comments
-
-Time/space complexity analysis
-
-Edge case handling
-
-Maintains context through lightweight memory
-
-### User Interface
-Input Panel: Paste problem or select from samples
-
-Analysis View: Structured problem breakdown
-
-Solution View: Generated code with download option
-
-History: Previous solutions with timestamps
+---
