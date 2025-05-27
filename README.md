@@ -65,7 +65,7 @@ graph TD
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/code-crafter.git
+   git clone https://github.com/sameeran4218/CodeCrafter.git
    cd code-crafter
    ```
 
@@ -113,9 +113,8 @@ streamlit run app.py
   - Edge case handling
 - Maintains context through lightweight memory for better coherence
 
----
 
-## User Interface
+### 3. User Interface
 
 - **Input Panel:** Paste your problem statement or select from sample problems
 - **Analysis View:** Displays structured problem breakdown from Agent 1
