@@ -319,7 +319,8 @@ def main():
         layout="wide"
     )
 
-    st.title("🤖 Dual Agent DSA Problem Solver")
+    st.title("🤖 Code Crafter")
+    st.markdown("Craft solutions to any Data Structures and Algorithms questions with our State-of-the-Art DSA Problem Solver ")
     st.markdown("**Agent 1** (HuggingFace) analyzes problems → **Agent 2** (OpenAI) generates solutions")
 
     # Initialize the chain in session state
