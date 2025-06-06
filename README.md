@@ -2,7 +2,7 @@
 # 🤖 Code Crafter: DSA Problem Solver
 
 [![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://codecrafter4218.streamlit.app/)
-[![YouTube Video](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/n8twMXZUVkY)
+[![YouTube Demo](https://img.shields.io/badge/Watch%20Demo-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/n8twMXZUVkY)
 
 Code Crafter is an intelligent system that combines two AI agents to analyze and solve Data Structures and Algorithms (DSA) problems. Agent 1 (HuggingFace) performs problem analysis, while Agent 2 (OpenAI) generates optimized solutions.
 
